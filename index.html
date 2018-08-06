@@ -5,34 +5,6 @@
 </head>
 <body>
 <h1>Sample Website</h1>
-<form method="post">
-	<input type="text" name="Username">
-	<input type="password" name="Password">
-	<input type="submit" onclick="logIn()" value="Login with facebook">
-</form>
-<script>
-	function logIn() {
-		FB.login(function(response) {
-			console.log(response);
-		}, {scope: 'public_profile, email'});
-	}
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '2082559508444651',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v3.1'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 </body>
 </html>
