@@ -1,33 +1,45 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Social Sharing</title>
+<title>Your Website Title</title>
 <!-- You can use Open Graph tags to customize link previews.
 Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
 
+<meta property="og:url"           	content="https://lom13.github.io/fbshare.html" />
+<meta property="og:title"         	content="Expecting model title test" />
+<meta property="og:description"   	content="Number One model description test" />
+<meta property="og:image:type"      content="image/jpeg" />
+<meta property="og:image"         	content="https://lom13.github.io/assets/img/ExpectingModels-Portfolio-IngridAndIsabel-23-customized-200x380.jpg" />
+<meta property="og:image:width"		content="157" />
+<meta property="og:image:height" 	content="340" />
 </head>
 <body>
 
-<h1>Sharing</h1>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="OCiQtEA9"></script>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <!-- Your share button code -->
-<!-- <div class="fb-share-button" data-href="https://lom13.github.io/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-</div> -->
-<button onclick="share()">Share to Workplace</button>
-<script>
-share = function(){
-    url = 'https://facebook.com/sharer.php?display=popup&u=' + window.location.href;
-    options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
-    window.open(url,'sharer',options);
-}
-</script>
-<!-- Bootstrap core JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Third party plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<div class="fb-share-button" 
+data-href="https://lom13.github.io/fbshare.html" 
+data-layout="button_count">
+</div>
+
+<!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="YW7lZz7y"></script> -->
+
+<!-- <div class="fb-share-button" data-href="https://lom13.github.io/fbshare.html" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flom13.github.io%2Ffbshare.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+<img class="img-fluid" src="assets/img/ExpectingModels-Portfolio-IngridAndIsabel-23-customized-200x380.jpg" alt="" /> -->
+
+
+
+
 </body>
 </html>
