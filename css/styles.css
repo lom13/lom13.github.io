@@ -10254,3 +10254,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 24px;
   font-weight: 300;
 }
+
+img.circle-135 {
+  border-radius: 135px;
+}
