@@ -10258,3 +10258,7 @@ form .row:first-child .floating-label-form-group {
 img.circle-135 {
   border-radius: 135px;
 }
+
+.about-list a {
+  color: #fff;
+}
