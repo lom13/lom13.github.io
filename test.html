@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Font Awesome icons (free version)-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+    	* {
+    		font-family: Roboto,sans-serif !important;
+    	}
+
+    	body {
+    		background: linear-gradient(270deg, rgb(31,170,255) 3%, rgb(145,78,229) 94%);
+    	}
+
+    	h1, h2, h3, h4 {
+    		padding-top: 20px;
+    		color: #fff;
+    		font-size: 40px;
+    	}
+
+    	.heading-1 {
+    		font-size: 58px;
+    		color: #fff;
+    	}
+
+    	#section-1 {
+    		background: rgb(24,24,24);
+/*			height: calc(112vh - 80px);*/
+/*			padding-top: calc(40vh - 32px);*/
+/*			padding-bottom: calc(40vh - 32px);*/
+			padding-top: 0 !important;
+    	}
+
+    	#section-1 .row p {
+    		color: #cccccc;
+    		font-size: 1.375rem;
+    	}
+
+    	#section-1 p, #section-1 a, #section-2 p {
+    		margin-top: 30px;
+    	}
+
+    	#section-1 h2 {
+    		margin-top: 40px;
+    	}
+
+    	#section-1 .col-md-6:nth-child(2) {
+    		display: flex;
+		    flex-direction: column-reverse;
+		    justify-content: center;
+    	}
+
+    	#section-1 .col-md-6:nth-child(2) img {
+    		margin-top: 30px;
+    	}
+
+    	#section-2 {
+/*    		background: linear-gradient(270deg, rgb(31,170,255) 3%, rgb(145,78,229) 94%);*/
+    	}
+
+    	#section-2 .row div:nth-child(2) {
+    		display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+    	}
+
+    	section {
+    		padding-top: 90px;
+    		padding-bottom: 90px;
+    	}
+
+    	section p {
+    		color: #fff;
+    		font-size: 18px;
+    	}
+
+    	#section-2 .container:nth-child(3) p {
+    		color: #000;
+    	}
+
+    	#section-2 .container:nth-child(3) img {
+    		padding-top: 44px;
+    		padding-bottom: 46px;
+    	}
+
+    	#section-2 .container:nth-child(2) {
+    		padding-top: 90px;
+    	}
+
+    	#section-2 .container:nth-child(3) .col-md-3 div {
+    		border: 2px solid #01eefc;
+    		border-radius: 8px;
+    		background-color: #fff;
+    		height: 356px
+    		;
+    	}
+
+    	#section-2 .container {;
+    		padding-bottom: 50px;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3 p {
+    		margin-top: 0 !important;
+    		margin-bottom: 0 !important;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3 div p:nth-child(2) {
+    		border-top: 1px solid #01eefc;
+    		padding-top: 19px;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3 p:nth-child(3) {
+    		font-size: 40px;
+    		font-weight: bold;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3:nth-child(3) img {
+    		padding-bottom: 60px;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3:nth-child(3) .bord-top-cyan {
+    		font-size: 40px;
+    		font-weight: bold;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3:nth-child(3) p:nth-child(3) {
+    		font-size: 18px;
+    		font-weight: 400;
+    	}
+
+    	#section-2 .container.icon-4 .col-md-3 {
+    		padding-right: 0.5rem;
+    		padding-left: 0.5rem;
+    	}
+    	#section-2 .container.icon-4 .col-md-3:first-child img {
+    		padding-bottom: 36px;
+    	}
+    	#section-2 .container.icon-4 .col-md-3:nth-child(4) img {
+    		padding-bottom: 43px;
+    	}
+
+    	.title-p {
+    		padding-top: 90px;
+    	}
+
+    	.px-5 {
+    	}
+
+    	.list-group-container li {
+    		width: 100%;
+    		border-color: #fff;
+    		background-color: transparent;
+    		color: #fff;
+    		cursor: pointer;
+    	}
+
+    	.list-group-container li:hover {
+    		background-color: #fff;
+    		color: #000;
+    	}
+
+    	.list-group-container li:first-child {
+    		background-color: #fff;
+    		color: #000;
+    	}
+
+    	table tbody tr td {
+    		color: #fff;
+    	}
+    	.caret-btn div {
+    		display: flex;
+		    flex-direction: row;
+		    justify-content: flex-end;
+    	}
+
+    	.caret-btn button {
+    		border: none;
+		    background: none;
+		    font-size: 25px;
+    	}
+
+    	.caret-btn {
+    		margin-bottom: -45px;
+    	}
+
+    	.caret-btn div div:first-child {
+/*    		margin-right: 20vw;*/
+    	}
+    	#table-1 {
+
+    	}
+    	.caret-btn {
+			display: none;	
+		}
+
+		.btn-custom {
+			min-width: 164px;
+		    background: #d100dc;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    color: #fff;
+		    font-size: 18px;
+		    font-weight: 400;
+		    padding-left: 32px;
+		    padding-right: 32px;
+		}
+
+		.btn-custom:hover {
+			background: #ef4df7;
+			color: #fff;
+		}
+		.con-btn {
+			margin-top: 90px;
+		}
+    	@media screen and (max-width: 720px) {
+			/*table thead {
+			display: none;
+			}
+			table td {
+			display: flex;
+			}
+
+			table td::before {
+			content: attr(label);
+			font-weight: bold;
+			width: 120px;
+			min-width: 120px;
+			}*/
+			table thead tr th, table tbody tr td {
+				display: none;
+			}
+			table thead tr th:first-child, table thead tr th:nth-child(2), table tbody tr td:first-child, table tbody tr td:nth-child(2) {
+				display: table-cell;
+			}
+			.caret-btn {
+				display: block;
+			}
+
+			#section-1 {
+/*				height: calc(170vh - 88px);*/
+			}
+		}
+
+		#mainNav {
+			padding-top: 0;
+		}
+
+		#mainNav li a:hover {
+			color: #ef4df7 !important;
+		}
+
+		#mainNav {
+			background-color: unset !important;
+		}
+
+		#section-3 {
+			background: rgb(24,24,24);
+		}
+
+		.btn-collapse, .white {
+			color: #fff !important;
+		}
+
+		.collapse-title {
+			font-size: 22px;
+			font-weight: 600;
+		}
+
+		.collapse-desc {
+			padding: 10px;
+			color: #979797 !important;
+		}
+
+		.collapse-content {
+			padding: 30px 1px;
+		}
+
+		.tree-icon img {
+			width: 100%;
+			left: 0;
+			right: 0;
+		}
+
+		#section-1-1 {
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
+
+		#section-2 {
+			padding-bottom: 0;
+		}
+    </style>
+</head>
+<body>
+	<!-- Navbar -->
+	<div class="container">
+		
+	</div>
+	<!-- Section 1 -->
+	<section id="section-1">
+		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/test/Group-12.svg" /></a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="heading-1 text-sm-left">Become a Clarity Trader</h2>
+					<p>Prove your skills in either of our 1-step or 2-step Funded Challenges. Trade our capital on a funded account with <b>90% profit share.</b></p>
+					<a class="btn btn-custom btn-lg" href="#">Sign up</a>
+				</div>
+				<div class="col-md-6">
+					<img class="img-fluid" src="assets/img/test/BullBear.webp">
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	<section id="section-1-1">
+		<div class="tree-icon text-center">
+			<img src="assets/img/test/waves.svg">
+		</div>
+	</section>
+	<!-- Section 2 -->
+	<section id="section-2">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-fluid" src="assets/img/test/Mob-1.webp">
+				</div>
+				<div class="col-md-6">
+					<h2>Become a Funded Trader With Simplified Rules</h2>
+					<p>Clarity Traders have a distinctive Funded Challenge evaluation process for traders.</p>
+					<p>It’s your goal to meet our set criteria and prove you have what it takes to become one of our talented traders. Once you have completed either our 1-phase or 2-phase Funded Program you will manage up to $300k in funds.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2 class="text-center">We Provide So Much More Than a Fully-Funded Account</h2>
+		</div>
+		<div class="container icon-4">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<div class="">
+						<img class="img-fluid" src="assets/img/test/screen_icon.svg">
+						<p class="bord-top-cyan">Keep</p>
+						<p>90%</p>
+						<p>of Your Profits</p>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="">
+						<img class="img-fluid" src="assets/img/test/grow_up.svg">
+						<p  class="bord-top-cyan">Leverage Up To</p>
+						<p>1:100</p>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="">
+						<img class="img-fluid" src="assets/img/test/Group1.svg">
+						<p  class="bord-top-cyan">$6</p>
+						<p>Commission Trading</p>
+					</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="">
+						<img class="img-fluid" src="assets/img/test/card.svg">
+						<p  class="bord-top-cyan">Trade</p>
+						<p>7</p>
+						<p>Asset Classes</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container title-p text-center">
+			<h2 class="text-center">Choose Your Account Size</h2>
+			<p class="px-0">Our challenge is designed to give all traders a fair chance and at the same time an elite experience. Choose your challenge from the table below to see the required criteria for that account. How you trade, is entirely up to you, simply just meet the goals.</p>
+		</div>
+		<div class="container list-group-container">
+			<ul class="list-group list-group-horizontal-sm">
+				<li class="list-group-item">$25,000</li>
+				<li class="list-group-item">$50,000</li>
+				<li class="list-group-item">$100,000</li>
+				<li class="list-group-item">$200,000</li>
+				<li class="list-group-item">$300,000</li>
+			</ul>
+		</div>
+		
+		<div class="container">
+			<div class="caret-btn">
+				<div>
+					<!-- <div>
+						<button id="btn1"><</button>
+					</div> -->
+					<div>
+						<button id="btn2">></button>
+					</div>
+				</div>
+				
+			</div>
+			<table id="table-1" class="table">
+				<thead>
+					<tr>
+						<th>TRADING GOALS</th>
+						<th>STAGE 1</th>
+						<th>STAGE 2</th>
+						<th>FUNDED</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Trading Period</td>
+						<td>Unlimited</td>
+						<td>Limited</td>
+						<td>Indefinite</td>
+					</tr>
+					<tr>
+						<td>Min days</td>
+						<td>5</td>
+						<td>7</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Max. Daily Drawdown</td>
+						<td>5%</td>
+						<td>6%</td>
+						<td>7%</td>
+					</tr>
+					<tr>
+						<td>Max. Overall Drawdown</td>
+						<td>8%</td>
+						<td>9%</td>
+						<td>10%</td>
+					</tr>
+					<tr>
+						<td>Profit Target</td>
+						<td>8%</td>
+						<td>5%</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Purchase Amount</td>
+						<td>$1399</td>
+						<td>N/A</td>
+						<td>Refund</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="text-center con-btn">
+				<a href="#" class="btn btn-custom">Start 2 Stage Challenge</a>
+			</div>
+		</div>
+	</section>
+	<section id="section-1-1">
+		<div class="tree-icon text-center">
+			<img src="assets/img/test/curveAsymmetricalNegative.svg">
+		</div>
+	</section>
+	<!-- Section 3 -->
+	<section id="section-3">
+		<div class="container">
+			<h2>FAQ</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="collapse-content">
+						<a class="collapse-title btn btn-collapse" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1"><i class="white fas fa-plus-circle"></i> What is Clarity Traders?</a>
+						<div class="collapse" id="collapse1">
+						  <div class="white collapse-desc">
+						    Clarity Traders is a prop firm looking for traders worldwide to provide them with the opportunity to manage up to $300k in funding.
+						  </div>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<a class="collapse-title btn btn-collapse" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2"><i class="white fas fa-plus-circle"></i> What is the Consistency Rule?</a>
+						<div class="collapse" id="collapse2">
+						  <div class="white collapse-desc">
+						    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+						  </div>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<a class="collapse-title btn btn-collapse" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3"><i class="white fas fa-plus-circle"></i> How do I signup?</a>
+						<div class="collapse" id="collapse3">
+						  <div class="white collapse-desc">
+						    It’s easy! Fill out our short registration form. Once you have completed our sign up process, you will have instant access to your Funded Account Dashboard.
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="collapse-content">
+						<a class="collapse-title btn btn-collapse" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4"><i class="white fas fa-plus-circle"></i> How quick I can start?</a>
+						<div class="collapse" id="collapse4">
+						  <div class="white collapse-desc">
+						    Clarity Traders is a prop firm looking for traders worldwide to provide them with the opportunity to manage up to $300k in funding.
+						  </div>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<a class="collapse-title btn btn-collapse" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5"><i class="white fas fa-plus-circle"></i> What payment methods do you offer?</a>
+						<div class="collapse" id="collapse5">
+						  <div class="white collapse-desc">
+						    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+						  </div>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<a class="collapse-title btn btn-collapse" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6"><i class="white fas fa-plus-circle"></i> How does drawdown work?</a>
+						<div class="collapse" id="collapse6">
+						  <div class="white collapse-desc">
+						    It’s easy! Fill out our short registration form. Once you have completed our sign up process, you will have instant access to your Funded Account Dashboard.
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<!-- <script src="assets/mail/jqBootstrapValidation.js"></script> -->
+<!-- <script src="assets/mail/contact_me.js"></script> -->
+<!-- Core theme JS-->
+<!-- <script src="js/scripts.js"></script> -->
+
+<script>
+	(function($){
+		$(document).ready(function(){
+			// button next
+			$('#btn2').on('click', function(){
+				// Check if visible
+				// var tData = $("#table-1 tbody tr:nth-child(1) td");
+
+				let tbodyData = $("#table-1 tbody tr");
+
+				for (var j = 1; j <= tbodyData.length; j++) {
+					var tData = $("#table-1 tbody tr:nth-child("+j+") td");
+					console.log(tData.length);
+					for (var i = 1; i <= tData.length; i++) {
+						// check if visible then get the number add 1
+						var currentNum = tData[i];
+						// console.log(currentNum);
+						if (i >= 2) {
+
+							if ( $('#table-1 tbody tr:nth-child('+j+') td:nth-child('+i+')').css('display') != 'none' ) {
+								// set display to none
+								$('#table-1 tbody tr:nth-child('+j+') td:nth-child('+i+')').css('display', 'none');
+								let newVal = i+=1;
+								console.log(i+=2);
+								// set the next visible td
+								$('#table-1 tbody tr:nth-child('+j+') td:nth-child('+newVal+')').css('display', 'table-cell');
+								
+								// Set TH
+								for (var i = 2; i <= 4; i++) {
+									$('#table-1 thead tr:nth-child(1) th:nth-child('+i+')').css('display', 'none');
+								}
+								$('#table-1 thead tr:nth-child(1) th:nth-child('+newVal+')').css('display', 'table-cell');
+							}
+						}
+						// Reaches the highest then go back to zero
+						if (i == 3) {
+							// console.log('test')
+							let newVal = i+=1;
+							$('#table-1 tbody tr:nth-child('+j+') td:nth-child(2)').css('display', 'table-cell');
+							$('#table-1 tbody tr:nth-child('+j+') td:nth-child('+i+')').css('display', 'none');
+
+							// TH
+							$('#table-1 thead tr:nth-child(1) th:nth-child('+i+')').css('display', 'none');
+							$('#table-1 thead tr:nth-child(1) th:nth-child(2)').css('display', 'table-cell');
+						}
+					}	
+				}
+			});
+
+			
+		});
+	}(jQuery))
+</script>
+</body>
+</html>
